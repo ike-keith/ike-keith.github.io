@@ -1,14 +1,158 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Youfenghu&#39;s Blog</title>
+    <title>Tags on Youfeng&#39;s Blog</title>
+    
+    
+    
     <link>/tags/</link>
-    <description>Recent content in Tags on Youfenghu&#39;s Blog</description>
+    <description>Recent content in Tags on Youfeng&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 04 Sep 2019 00:37:00 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>/tags/blog/</link>
+      <pubDate>Wed, 04 Sep 2019 00:37:00 +0800</pubDate>
+      
+      <guid>/tags/blog/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>vmware</title>
+      <link>/tags/vmware/</link>
+      <pubDate>Wed, 04 Sep 2019 00:37:00 +0800</pubDate>
+      
+      <guid>/tags/vmware/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>/tags/css/</link>
+      <pubDate>Wed, 11 Jul 2018 00:37:00 +0800</pubDate>
+      
+      <guid>/tags/css/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>/tags/debian/</link>
+      <pubDate>Thu, 21 Jun 2018 00:37:00 +0800</pubDate>
+      
+      <guid>/tags/debian/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>cisco</title>
+      <link>/tags/cisco/</link>
+      <pubDate>Sat, 07 Jun 2014 00:37:00 +0800</pubDate>
+      
+      <guid>/tags/cisco/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>moment</title>
+      <link>/tags/moment/</link>
+      <pubDate>Wed, 14 Mar 2012 00:37:00 +0800</pubDate>
+      
+      <guid>/tags/moment/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>/tags/game/</link>
+      <pubDate>Mon, 05 Apr 2010 22:42:00 +0800</pubDate>
+      
+      <guid>/tags/game/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          
+          
+        
+        </description>
+    </item>
     
   </channel>
 </rss>

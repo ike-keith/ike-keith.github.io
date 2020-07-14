@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game on Youfeng&#39;s Blog</title>
+    
+    
+    
+    <link>/tags/game/</link>
+    <description>Recent content in game on Youfeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Apr 2010 22:42:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>星际 2 封测邀请</title>
+      <link>/posts/starcraft2-beta-test-invitation/</link>
+      <pubDate>Mon, 05 Apr 2010 22:42:00 +0800</pubDate>
+      
+      <guid>/posts/starcraft2-beta-test-invitation/</guid>
+      <description>
+        
+          &lt;img src=&#34;/img/starcraft2-beta-test-invitation-cover.jpg&#34;/&gt;
+          
+        
+        
+        
+          &lt;p&gt;starcraft2-beta-test-invitation&lt;/p&gt;
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

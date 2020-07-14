@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cisco on Youfeng&#39;s Blog</title>
+    
+    
+    
+    <link>/tags/cisco/</link>
+    <description>Recent content in cisco on Youfeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jun 2014 00:37:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/cisco/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cisco Catalyst 2960 &amp; 3750 Series Switches Password Recovery</title>
+      <link>/posts/cisco-catalyst-2960-3750-series-switches-password-recovery/</link>
+      <pubDate>Sat, 07 Jun 2014 00:37:00 +0800</pubDate>
+      
+      <guid>/posts/cisco-catalyst-2960-3750-series-switches-password-recovery/</guid>
+      <description>
+        
+          &lt;img src=&#34;/img/cisco-catalyst-2960-3750-series-switches-password-recovery.jpg&#34;/&gt;
+          
+        
+        
+        
+          &gt;Switch: flash_init&lt;br&gt;Switch: dir flash:&lt;br&gt;Switch: rename flash:config.text flash:config.old&lt;br&gt;Switch: boot ...
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
