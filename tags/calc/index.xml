@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>calc on Youfeng&#39;s Blog</title>
+    
+    
+    
+    <link>/tags/calc/</link>
+    <description>Recent content in calc on Youfeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jan 2018 00:37:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/calc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IRR &amp; XIRR</title>
+      <link>/posts/irr-xirr/</link>
+      <pubDate>Wed, 10 Jan 2018 00:37:00 +0800</pubDate>
+      
+      <guid>/posts/irr-xirr/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          收益率各种算 ...
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

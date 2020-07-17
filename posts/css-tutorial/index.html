@@ -254,8 +254,8 @@
 }
 </code></pre></div><p><em>Note: Do not add a space between the property value and the unit (such as <code>margin-left: 20 px;</code>). The correct way is: <code>margin-left: 20px;</code></em></p>
 <h3 id="internal-style-sheet">Internal Style Sheet</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">style</span>&gt;
 <span style="color:#f92672">body</span> {
     <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">linen</span>;
 }
@@ -263,21 +263,21 @@
     <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">maroon</span>;
     <span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
 } 
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
+&lt;/<span style="color:#f92672">style</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
 </code></pre></div><h3 id="inline-styles">Inline Styles</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">h1</span> <span style="color:#f92672">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:blue;margin-left:30px;&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">This</span> <span style="color:#f92672">is</span> <span style="color:#f92672">a</span> <span style="color:#f92672">heading</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">h1</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:blue;margin-left:30px;&#34;</span>&gt;This is a heading&lt;/<span style="color:#f92672">h1</span>&gt;
 </code></pre></div><p><em>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</em></p>
 <h3 id="multiple-style-sheets">Multiple Style Sheets</h3>
 <p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">link</span> <span style="color:#f92672">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#f92672">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span> <span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mystyle.css&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mystyle.css&#34;</span>&gt;
+&lt;<span style="color:#f92672">style</span>&gt;
 <span style="color:#f92672">h1</span> {
     <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">orange</span>;
 }
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
+&lt;/<span style="color:#f92672">style</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
 </code></pre></div><h3 id="cascading-order">Cascading Order</h3>
 <ol>
 <li>Inline style (inside an HTML element)</li>
@@ -1264,22 +1264,22 @@ The following example specifies the position of the horizontal shadow (3px), the
 }
 </code></pre></div><h3 id="vertical-alignment-of-an-image">Vertical alignment of an image</h3>
 <p>This example demonstrates how to set the vertical align of an image in a text.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">style</span>&gt;
 <span style="color:#f92672">img</span>.<span style="color:#a6e22e">top</span> {
     <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">text</span><span style="color:#f92672">-</span><span style="color:#66d9ef">top</span>;
 }
 <span style="color:#f92672">img</span>.<span style="color:#a6e22e">bottom</span> {
     <span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">text</span><span style="color:#f92672">-</span><span style="color:#66d9ef">bottom</span>;
 }
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
+&lt;/<span style="color:#f92672">style</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
 
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">body</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">p</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">An</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">img</span> <span style="color:#f92672">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image.png&#34;</span> <span style="color:#f92672">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Image&#34;</span> <span style="color:#f92672">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;270&#34;</span> <span style="color:#f92672">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">image</span> <span style="color:#f92672">with</span> <span style="color:#f92672">a</span> <span style="color:#f92672">default</span> <span style="color:#f92672">alignment</span><span style="color:#f92672">.&lt;/</span><span style="color:#f92672">p</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#f92672">br</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">p</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">An</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">img</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#f92672">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image.png&#34;</span> <span style="color:#f92672">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Image&#34;</span> <span style="color:#f92672">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;270&#34;</span> <span style="color:#f92672">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">image</span> <span style="color:#f92672">with</span> <span style="color:#f92672">a</span> <span style="color:#f92672">text-top</span> <span style="color:#f92672">alignment</span><span style="color:#f92672">.&lt;/</span><span style="color:#f92672">p</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#f92672">br</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">p</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">An</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">img</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span> <span style="color:#f92672">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image.png&#34;</span> <span style="color:#f92672">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Image&#34;</span> <span style="color:#f92672">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;270&#34;</span> <span style="color:#f92672">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">image</span> <span style="color:#f92672">with</span> <span style="color:#f92672">a</span> <span style="color:#f92672">text-bottom</span> <span style="color:#f92672">alignment</span><span style="color:#f92672">.&lt;/</span><span style="color:#f92672">p</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">body</span><span style="color:#f92672">&gt;</span>
+&lt;<span style="color:#f92672">body</span>&gt;
+&lt;<span style="color:#f92672">p</span>&gt;An &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Image&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;270&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span>&gt; image with a default alignment.&lt;/<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;
+&lt;<span style="color:#f92672">p</span>&gt;An &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;top&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Image&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;270&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span>&gt; image with a text-top alignment.&lt;/<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;
+&lt;<span style="color:#f92672">p</span>&gt;An &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;image.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Image&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;270&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span>&gt; image with a text-bottom alignment.&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
 </code></pre></div><h3 id="all-css-text-properties">All CSS Text Properties</h3>
 <table>
 <thead>
@@ -1402,15 +1402,15 @@ Start with the font you want, and end with a generic family, to let the browser 
     <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Courier New&#34;</span>, Courier, <span style="color:#66d9ef">monospace</span>;
 }
 </code></pre></div><p>Learn how to use Google Fonts on your web page:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">link</span> <span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://fonts.googleapis.com/css?family=Sofia&#39;</span> <span style="color:#f92672">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;stylesheet&#39;</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://fonts.googleapis.com/css?family=Sofia&#39;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;stylesheet&#39;</span>&gt;
+&lt;<span style="color:#f92672">style</span>&gt;
 <span style="color:#f92672">body</span> {
     <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#39;Sofia&#39;</span>;
     <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
 }
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">head</span><span style="color:#f92672">&gt;</span>
+&lt;/<span style="color:#f92672">style</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
 </code></pre></div><h3 id="font-style">Font Style</h3>
 <p>The <code>font-style</code> property is mostly used to specify italic text.<br>
 This property has three values:</p>
@@ -1573,14 +1573,14 @@ The <code>font-size</code> and <code>font-family</code> values are required. If 
 <h2 id="css-icons">CSS Icons</h2>
 <h3 id="font-awesome-icons">Font Awesome Icons</h3>
 <p>To use the Font Awesome icons, add the following line inside the <code>&lt;head&gt;</code> section of your HTML page:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">link</span> <span style="color:#f92672">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#34;</span>&gt;
 </code></pre></div><p>Note: No downloading or installation is required!</p>
 <p>Copied from Font Awesome Official site</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">link</span> <span style="color:#f92672">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://use.fontawesome.com/releases/v5.1.0/css/all.css&#34;</span> <span style="color:#f92672">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt&#34;</span> <span style="color:#f92672">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://use.fontawesome.com/releases/v5.1.0/css/all.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
 
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">i</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-stroopwafel&#34;</span><span style="color:#f92672">&gt;&lt;/</span><span style="color:#f92672">i</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;!</span><span style="color:#f92672">--</span> <span style="color:#f92672">this</span> <span style="color:#f92672">icon</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">s</span> <span style="color:#f92672">1</span><span style="color:#f92672">)</span> <span style="color:#f92672">style</span> <span style="color:#f92672">prefix</span> <span style="color:#f92672">==</span> <span style="color:#f92672">fas</span> <span style="color:#f92672">and</span> <span style="color:#f92672">2</span><span style="color:#f92672">)</span> <span style="color:#f92672">icon</span> <span style="color:#f92672">name</span> <span style="color:#f92672">==</span> <span style="color:#f92672">stroopwafel</span> <span style="color:#f92672">--</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">i</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-stroopwafel&#34;</span><span style="color:#f92672">&gt;&lt;/</span><span style="color:#f92672">i</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;!</span><span style="color:#f92672">--</span> <span style="color:#f92672">using</span> <span style="color:#f92672">an</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">i</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">element</span> <span style="color:#f92672">to</span> <span style="color:#f92672">reference</span> <span style="color:#f92672">the</span> <span style="color:#f92672">icon</span> <span style="color:#f92672">--</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">span</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-stroopwafel&#34;</span><span style="color:#f92672">&gt;&lt;/</span><span style="color:#f92672">span</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;!</span><span style="color:#f92672">--</span> <span style="color:#f92672">using</span> <span style="color:#f92672">a</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">span</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">element</span> <span style="color:#f92672">to</span> <span style="color:#f92672">reference</span> <span style="color:#f92672">the</span> <span style="color:#f92672">icon</span> <span style="color:#f92672">--</span><span style="color:#f92672">&gt;</span>
+&lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-stroopwafel&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt; <span style="color:#75715e">&lt;!-- this icon&#39;s 1) style prefix == fas and 2) icon name == stroopwafel --&gt;</span>
+&lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-stroopwafel&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt; <span style="color:#75715e">&lt;!-- using an &lt;i&gt; element to reference the icon --&gt;</span>
+&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fas fa-stroopwafel&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt; <span style="color:#75715e">&lt;!-- using a &lt;span&gt; element to reference the icon --&gt;</span>
 </code></pre></div><p>Example</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 &lt;<span style="color:#f92672">html</span>&gt;
@@ -1608,7 +1608,7 @@ The <code>font-size</code> and <code>font-family</code> values are required. If 
 &lt;/<span style="color:#f92672">html</span>&gt;
 </code></pre></div><h3 id="google-icons">Google Icons</h3>
 <p>To use the Google icons, add the following line inside the <code>&lt;head&gt;</code> section of your HTML page:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">link</span> <span style="color:#f92672">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/icon?family=Material+Icons&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/icon?family=Material+Icons&#34;</span>&gt;
 </code></pre></div><p>Note: No downloading or installation is required!</p>
 <p>Example</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
@@ -1971,7 +1971,7 @@ Anything added to the <code>&lt;ol&gt;</code> or <code>&lt;ul&gt;</code> tag, af
 </table>
 <h2 id="css-tables">CSS Tables</h2>
 <p>The look of an HTML table can be greatly improved with CSS:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">style</span>&gt;
 #customers {
     <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Trebuchet MS&#34;</span>, Arial, Helvetica, <span style="color:#66d9ef">sans-serif</span>;
     <span style="color:#66d9ef">border-collapse</span>: <span style="color:#66d9ef">collapse</span>;
@@ -1994,66 +1994,66 @@ Anything added to the <code>&lt;ol&gt;</code> or <code>&lt;ul&gt;</code> tag, af
     <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#4CAF50</span>;
     <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
 }
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+&lt;/<span style="color:#f92672">style</span>&gt;
 
 
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">table</span> <span style="color:#f92672">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;customers&#34;</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">th</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Company</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">th</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">th</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Contact</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">th</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">th</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Country</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">th</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Alfreds</span> <span style="color:#f92672">Futterkiste</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Maria</span> <span style="color:#f92672">Anders</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Germany</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Berglunds</span> <span style="color:#f92672">snabbköp</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Christina</span> <span style="color:#f92672">Berglund</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Sweden</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Centro</span> <span style="color:#f92672">comercial</span> <span style="color:#f92672">Moctezuma</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Francisco</span> <span style="color:#f92672">Chang</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Mexico</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Ernst</span> <span style="color:#f92672">Handel</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Roland</span> <span style="color:#f92672">Mendel</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Austria</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Island</span> <span style="color:#f92672">Trading</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Helen</span> <span style="color:#f92672">Bennett</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">UK</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Königlich</span> <span style="color:#f92672">Essen</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Philip</span> <span style="color:#f92672">Cramer</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Germany</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Laughing</span> <span style="color:#f92672">Bacchus</span> <span style="color:#f92672">Winecellars</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Yoshi</span> <span style="color:#f92672">Tannamuri</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Canada</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Magazzini</span> <span style="color:#f92672">Alimentari</span> <span style="color:#f92672">Riuniti</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Giovanni</span> <span style="color:#f92672">Rovelli</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Italy</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">North</span><span style="color:#f92672">/</span><span style="color:#f92672">South</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Simon</span> <span style="color:#f92672">Crowther</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">UK</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Paris</span> <span style="color:#f92672">spécialités</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Marie</span> <span style="color:#f92672">Bertrand</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">France</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">td</span><span style="color:#f92672">&gt;</span>
-  <span style="color:#f92672">&lt;/</span><span style="color:#f92672">tr</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&lt;/</span><span style="color:#f92672">table</span><span style="color:#f92672">&gt;</span>
+&lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;customers&#34;</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">th</span>&gt;Company&lt;/<span style="color:#f92672">th</span>&gt;
+    &lt;<span style="color:#f92672">th</span>&gt;Contact&lt;/<span style="color:#f92672">th</span>&gt;
+    &lt;<span style="color:#f92672">th</span>&gt;Country&lt;/<span style="color:#f92672">th</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Alfreds Futterkiste&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Maria Anders&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Germany&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Berglunds snabbköp&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Christina Berglund&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Sweden&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Centro comercial Moctezuma&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Francisco Chang&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Mexico&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Ernst Handel&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Roland Mendel&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Austria&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Island Trading&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Helen Bennett&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;UK&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Königlich Essen&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Philip Cramer&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Germany&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Laughing Bacchus Winecellars&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Yoshi Tannamuri&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Canada&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Magazzini Alimentari Riuniti&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Giovanni Rovelli&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Italy&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;North/South&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Simon Crowther&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;UK&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+  &lt;<span style="color:#f92672">tr</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Paris spécialités&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;Marie Bertrand&lt;/<span style="color:#f92672">td</span>&gt;
+    &lt;<span style="color:#f92672">td</span>&gt;France&lt;/<span style="color:#f92672">td</span>&gt;
+  &lt;/<span style="color:#f92672">tr</span>&gt;
+&lt;/<span style="color:#f92672">table</span>&gt;
 </code></pre></div><h3 id="table-borders">Table Borders</h3>
 <p>To specify table borders in CSS, use the <code>border</code> property.<br>
 The example below specifies a black border for <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements:</p>
